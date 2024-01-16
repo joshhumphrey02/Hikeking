@@ -52,12 +52,12 @@ const Header = () => {
 					<img
 						src={HeroImg}
 						alt="hero"
-						className="h-[75%] w-[80%] rounded-[4rem] rounded-r-[12rem]"
+						className=" md:h-[85%] w-full rounded-[2rem] rounded-tr-[12rem]"
 					/>
 				</div>
 			</div>
 
-			<div className="bg-white shadow-2xl flex md:flex-row flex-col md:-mt-48 gap-10 md:p-14 p-10 mt-5 rounded-md">
+			<div className="bg-white shadow-2xl flex md:flex-row flex-col mt-5 gap-10 md:p-14 p-10 rounded-md">
 				{Info.map((info, i) => (
 					<div key={i}>
 						<img src={info.icon} alt="icon" className="h-16" />

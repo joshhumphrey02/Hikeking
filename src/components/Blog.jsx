@@ -11,8 +11,10 @@ const Blog = ({ content, alternative }) => {
 				<img
 					src={content.img}
 					alt="img"
-					className={`md:h-[550px] rounded-xl ${
-						alternative ? "rounded-r-[14rem]" : "rounded-l-[14rem]"
+					className={`md:h-[550px] h-[400px] rounded-xl ${
+						alternative
+							? "md:rounded-tr-[14rem] rounded-tr-[8rem]"
+							: "md:rounded-bl-[14rem] rounded-bl-[8rem]"
 					} h-full`}
 				/>
 			</div>
